@@ -1,0 +1,10 @@
+{
+    "dependencies": {
+        "github.com/davecgh/go-spew": {
+            "branch": "master"
+        },
+        "github.com/satori/go.uuid": {
+            "branch": "master"
+        }
+    }
+}
