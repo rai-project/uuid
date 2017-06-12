@@ -15,7 +15,7 @@ addons:
     packages:
     - glide
 install:
-  - glide --debug install --force
+  - glide install --force
   - find vendor -type f -exec sed -i 's/Sirupsen/sirupsen/g' {} +
   - go build
 script:
