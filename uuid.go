@@ -20,7 +20,7 @@ func NewV5(u, name string) string {
 }
 
 func New(obj interface{}) string {
-	u4 := gouuid.NewV4()
+	u4 := gouuid.Must(gouuid.NewV4())
 	h := sha1.New()
 	spew.Fdump(h, obj)
 	u5 := gouuid.NewV5(u4, hex.EncodeToString(h.Sum(nil)))
