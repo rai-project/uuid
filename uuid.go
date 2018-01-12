@@ -10,7 +10,7 @@ import (
 )
 
 func NewV4() string {
-	u4 := gouuid.NewV4()
+	u4 := gouuid.Must(gouuid.NewV4())
 	return u4.String()
 }
 
